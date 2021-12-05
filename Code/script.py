@@ -45,13 +45,13 @@ def save_img(img,fname):
 
 def send_mail(n):
     
-    email_address = 'forestfiredetection16@gmail.com'
-    password = 'forestfire'
+    email_address = your_email+'@gmail.com' # Specify the gmail account you want to send the email from
+    password = your_password # Enter its password
 
     msg = EmailMessage()
     msg['Subject'] = 'FOREST FIRE ALERT !'
     msg['From'] = email_address
-    msg['To'] = email_address
+    msg['To'] = to_email_address # Specifiy the receiver's email address
     msg.set_content('A FIRE has been detected at a forest area near you. Stay Safe !')
 
     files = ['Local_Fire_Capture_1','Local_Fire_Capture_2','Local_Fire_Capture_3']
